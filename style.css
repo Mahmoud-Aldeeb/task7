@@ -1,0 +1,504 @@
+:root {
+    --back:  rgb(238, 235, 235);
+    --text-color: rgb(106, 103, 103) ;
+    --bottom-color: rgba(23, 23, 216, 0.853);
+  }
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.app {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.app .first {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--back);
+}
+.app .first .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.app .first img {
+    width: 35px;
+    height: 35px;
+}
+.app .first .left .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+.app .first .left .phone p {
+    margin-left: 10px;
+}
+.app .first .left .phone img {
+    width: 20px;
+    height: 20px;
+}
+
+.app .first .left .location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.app .first .right img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+/* navbar */
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+nav h1 {
+    font-weight: 900;
+}
+nav .address a{
+    margin-left: 30px;
+    color:var(--text-color) ;
+    font-weight: 800;
+}
+nav .address a:first-child {
+    color: black;
+    margin-left: 280px;
+}
+
+/* page-1 */
+.page-1 {
+    background-image: url(img/people-are-working-project-men-women-suits-sitting-table-businessmen-use-laptop.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-1 .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page-1 .title p {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 25px;
+}
+.page-1 .title h1 {
+    /* margin-bottom: 20px; */
+    color: white;
+    font-size: 70px;
+}
+.page-1 .title button {
+    background-color: white;
+    border: 0;
+    margin-top: 30px;
+    padding: 10px 40px 10px 40px;
+    color: var(--bottom-color);
+    font-weight: 800;
+}
+
+
+/* page-2 */
+.page-2 {
+    width: 100%;
+    position: relative;
+    left: 15%;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+.page-2 h1 {
+    margin-top: 10px;
+}
+.page-2 .midle {
+    width: 80%;
+    display: grid;
+    grid-template-columns: minmax(60%,1fr) minmax(40%,1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(32%,1fr)); */
+}
+.page-2 .midle img {
+    width: 95%;
+    height: 500px;
+}
+.page-2 .midle .details p {
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+.page-2 .midle .details a {
+    color: var(--bottom-color);
+    font-weight: 900;
+}
+.page-2 .end {
+    background-color: blue;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    bottom: -15%;
+    right: 35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.page-2 .end .left,
+.page-2 .end .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35px;
+}
+.page-2 .end .left p,
+.page-2 .end .right p{
+    color: white;
+    font-size: 10px;
+}
+.page-2 .end .left h3,
+.page-2 .end .right h3{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 900;
+}
+
+
+/* page-3 */
+.page-3 {
+    width: 100%;
+    background-color: var(--back);
+}
+.page-3 .midle {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    display: grid;
+    grid-template-columns: minmax(50%,1fr) minmax(50%,1fr);
+    padding: 100px 30px;
+    margin-bottom: 50px;
+}
+.page-3 img {
+    width: 90%;
+    height: 550px;
+}
+.page-3 .midle .choose {
+    padding-top: 30px;
+}
+.page-3 .midle .choose h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.page-3 .midle .choose p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+.page-3 .midle .choose span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.page-3 .midle .choose div {
+    height: 30px;
+    width: 80%;
+    background: linear-gradient(to right, blue, white);
+    padding-left: 300px;
+    padding-top: 6px;
+}
+
+/* page-4 */
+.page-4 {
+    width: 100%;
+    position: relative;
+    left: 15%;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+.page-4 .midle {
+    width: 80%;
+    display: grid;
+    grid-template-columns: minmax(40%,1fr) minmax(60%,1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(32%,1fr)); */
+}
+.page-4 .midle img {
+    width: 65%;
+    height: 400px;
+    margin-left: 70px;
+}
+.page-4 .midle .about a {
+    font-weight: 900;
+}
+.page-4 .midle .about h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.page-4 .midle .about p {
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+.page-4 .midle .about button {
+    background-color: var(--bottom-color);
+    border: 0;
+    margin-top: 10px;
+    padding: 15px 35px;
+    color: white;
+    font-weight: 800;
+}
+
+/* page-5 */
+.page-5 {
+    width: 100%;
+    background-color: var(--back);
+}
+.page-5 .start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page-5 .start a {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: blueviolet;
+    font-weight: 700;
+}
+.page-5 .start h1 {
+    font-size: 50px;
+}
+.page-5 .midle {
+    width: 68%;
+    position: relative;
+    left: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 80px 0;
+}
+.page-5 .midle .left-top,
+.page-5 .midle .right-bottom{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 70px;
+    /* width: 70%; */
+}
+.page-5 .midle .left-top h3,
+.page-5 .midle .right-bottom h3 {
+    margin: 20px 0;
+    font-weight: 900;
+    font-size: 25px;
+}
+.page-5 .midle .left-top p,
+.page-5 .midle .right-bottom p{
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.page-5 .midle .left-top button {
+    background-color: blueviolet;
+    border: 0;
+    color: white;
+    padding: 15px 35px;
+}
+.page-5 .midle .left-bottom img,
+.page-5 .midle .right-top img{
+    width: 100%;
+    height: 100%;
+}
+.page-5 .midle .right-bottom button {
+    background-color: var(--bottom-color);
+    border: 0;
+    color: white;
+    padding: 15px 35px;
+}
+/* page-6 */
+.page-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+.page-6 a {
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.page-6 h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.page-6 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.page-6 p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.page-6 h3 {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.page-6 span {
+    color: var(--text-color);
+}
+.page-6 .end {
+    display: flex;
+    flex-direction: row;
+}
+.page-6 .end div {
+    margin-top: 20px;
+    background-color: var(--back);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.page-6 .end div:first-child {
+    background-color: blue;
+}
+
+/* page-7 */
+.page-7 {
+    background-color: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-7 .start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 0 0;
+}
+.page-7 .start a {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.page-7 .start h1 {
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.page-7 .start p {
+    color: var(--text-color);
+}
+
+
+.page-7 .end {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+.page-7 .end .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-7 .end .left h3 {
+    margin-top: 20px;
+    font-weight: 900;
+}
+.page-7 .end .left p {
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/* footer */
+footer {
+    background-color: rgb(0, 0, 0);
+    /* height: 300px; */
+    color: white;
+}
+footer .start {
+    /* width: 80%; */
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 50px;
+    gap: 20px;
+}
+footer .start .logo p {
+    font-weight: 900;
+    font-size: 40px;
+}
+footer .start label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+footer .start label img {
+    width: 30px;
+    height: 30px;
+    
+}
+footer .start .useful span {
+    margin-top: 15px;
+    display: block;
+    color: var(--text-color);
+}
+footer .start .socials img {
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px;
+}
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 200px;
+}
+footer .end p {
+    color: var(--text-color);
+}
+footer .end div {
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+    position: relative;
+}
+footer .end div img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
